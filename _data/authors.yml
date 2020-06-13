@@ -1,0 +1,15 @@
+# Sample Authors
+# Remove file or replace with your own
+
+zeruhur:
+  name: zeruhur
+  picture:
+  email: zeruhur@mail.com
+  twitter: zeruhur
+  links:
+    - title: home page
+      url: https://zeruhur.space
+      icon: fas fa-home
+    - title: instagram
+      url: https://www.instagram.com/zeruhur/
+      icon: fab fa-instagram
