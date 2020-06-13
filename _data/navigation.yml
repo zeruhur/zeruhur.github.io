@@ -2,6 +2,8 @@
 
 - title: Home
   url: /
+- title: About
+  url: https://zeruhur.space
 - title: Posts
   url: /posts/
 - title: Categories
@@ -12,5 +14,3 @@
 #    url: /recipes/
 - title: Search
   url: /search/
-- title: Profile Page
-  url: https://zeruhur.space
