@@ -1,110 +1,45 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-remote_theme: "mmistakes/so-simple-theme@3.2.0"
-# remote_theme: mmistakes/so-simple-theme
-skin: "/assets/css/skins/default.css"
-locale: en-US
-title: "holism in the attic"
-description: "Wisdom is one thing. It is to know the thought by which all things are steered through all things."
-baseurl: # the subpath of your site, e.g. "/blog"
-url: "https://zeruhur.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
-date_format: "%B %-d, %Y"
-read_time: true # reading time estimates, e.g. true
-words_per_minute: 200 # 200
-mathjax:
-  enable: true # MathJax equations, e.g. true, false (default)
-  combo: tex-svg # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
-  tags: ams # "none", "ams" (default), "all"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-google_analytics: UA-169277426-1 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-disqus:
-  shortname: "zeruhur" # Disqus shortname, e.g. "my_disqus_shortname"
-twitter:
-  username: "zeruhur" # site's Twitter username, e.g. "mmistakes"
+title: Zeruhur
+description: ''
+url: 'https://zeruhur.space'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
 
-# Liquid
-liquid:
-  error_mode: strict
+author:
+  name: 'zeruhur'
+  blog_name: 'blog'
+  # email: zeruhur@gmail.com
+  twitter_username: zeruhur
+  facebook_username: zeruhur
+  github_username:  zeruhur
+  # linkedin_username:  joshgerdes
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
-permalink: /:categories/:title/
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
-feed:
-  path: atom.xml
+highlighter: rouge
 
-# Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+sass:
+    sass_dir: _sass
+    style: compressed
 
-# Search
-search_full_content: true # can have performance implications for large sites
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-# Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
-
-# Front Matter Defaults
-defaults:
-  # Posts defaults
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      share: true
-
-# Site Author
-author:
-  name: zeruhur
-  picture:
-  email: zeruhur@mail.com
-  twitter: zeruhur
-  links:
-    - title: home page
-      url: https://zeruhur.space
-      icon: fas fa-home
-    - title: instagram
-      url: https://www.instagram.com/zeruhur/
-      icon: fab fa-instagram
-      
-# Footer Links
-footer_links:
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

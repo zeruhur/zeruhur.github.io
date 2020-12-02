@@ -1,51 +1,54 @@
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if site.owner.google.verify %}<meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
-  {% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
-
-  {% if site.plugins contains 'jekyll-seo-tag' or site.gems contains 'jekyll-seo-tag' %}
-    {% comment %}
-      Add metadata for search engines and social networks if jekyll-seo-tag plugin is enabled
-    {% endcomment %}
-    {% include head-seo.html %}
-  {% else %}
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
   {% endif %}
 
-  <script>
-    /* Cut the mustard */
-    if ( 'querySelector' in document && 'addEventListener' in window ) {
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
-    }
-  </script>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ site.skin | default: '/assets/css/skins/default.css' | relative_url }}">
-  {% if site.google_fonts %}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={%- for font in site.google_fonts -%}{{ font.name | replace: ' ', '+' }}{% if font.weights %}:{% endif %}{{ font.weights | remove: ' ' }}{% if forloop.last != true %}|{% endif %}{%- endfor -%}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  {% if site.author.twitter_username %}
+  <meta name="twitter:creator" content="{{ site.author.twitter_username }}">
   {% endif %}
+  <meta name="twitter:image" content="{{ site.baseurl }}/images/favicons/favicon-194x194.png" />
 
-  {%- if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' -%}
-    {%- comment -%}
-      Add Atom feed link if jekyll-feed plugin is enabled
-    {%- endcomment -%}
-    {% include head-feed.html %}
-  {%- endif -%}
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ site.baseurl }}/images/favicons/favicon-194x194.png" />
 
-  {%- if site.head_scripts -%}
-    {%- for script in site.head_scripts -%}
-      {%- if script contains "://" -%}
-        {%- capture script_path %}{{ script }}{% endcapture -%}
-      {%- else -%}
-        {%- capture script_path %}{{ script | absolute_url }}{% endcapture -%}
-      {%- endif -%}
-      <script src="{{ script_path }}"></script>
-    {%- endfor -%}
-  {%- endif -%}
-
-  {% include head-custom.html %}
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="{{ site.baseurl }}/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{site.time | date: '%s%N'}}">
+  <link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
 </head>

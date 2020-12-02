@@ -1,7 +1,6 @@
 ---
-title: Tag Archive
 layout: tags
+title: Tags
 permalink: /tags/
-show_excerpts: true
-entries_layout: list
+robots: noindex
 ---
