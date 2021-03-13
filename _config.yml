@@ -13,7 +13,7 @@ favicon: 'favicon.ico'
 # Online profiles
 #dribbble: 'mydribbble'
 facebook: 'Zeruhur'
-twitter: 'zeruhur'
+#twitter: 'zeruhur'
 #linkedin: 'mylinkedin'
 instagram: 'zeruhur'
 #pinterest: 'mypinterest'
@@ -23,21 +23,22 @@ github-user: 'zeruhur'
 #codepen: ''
 #steam: ''
 #soundcloud: ''
-lastfm: 'ZeruhurII'
+#lastfm: 'ZeruhurII'
 #stack-overflow: ''
 #reddit: ''
 #rubygems: ''
 medium:  'zeruhur'
-tumblr: 'zeruhur'
+#tumblr: 'zeruhur'
 #weibo: 'myweibo'
 #vk: 'myvk'
 blog_url: 'zeruhur.space/blog/'
 #email: 'hello@example.com'
 messenger: 'zeruhur'
 wheretofindme: 'zeruhur'
-telegram: zeruhur
+telegram: 'zeruhur'
+itch.io: 'zeruhur'
 
-social-links-order: [wheretofindme, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url, email]
+social-links-order: [wheretofindme, itch.io, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url, email]
 
 # Advanced settings
 plugins:
@@ -166,3 +167,8 @@ social-links:
   - name: wheretofindme
     url-pattern: wheretofind.me/@__USERNAME__
     icon-class: fas fa-2x fa-globe
+
+  - name: itch.io
+    url-pattern: __USERNAME__.itch.io
+    icon-class: fab fa-2x fa-itch-io
+    
