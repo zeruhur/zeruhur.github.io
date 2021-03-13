@@ -3,7 +3,7 @@ remote_theme: 'epidrome/cover-card'
 
 # Title and tag line
 title: 'Zeruhur'
-description: 'A man with passion for useless things'
+description: 'a man passionate about useless things'
 
 # Images
 avatar: 'avatar.jpg'
@@ -31,7 +31,7 @@ medium:  'zeruhur'
 tumblr: 'zeruhur'
 #weibo: 'myweibo'
 #vk: 'myvk'
-blog_url: 'https://zeruhur.space/blog/'
+blog_url: 'zeruhur.space/blog/'
 #email: 'hello@example.com'
 messenger: 'zeruhur'
 wheretofindme: 'zeruhur'
