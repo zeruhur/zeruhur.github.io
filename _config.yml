@@ -128,7 +128,7 @@ social-links:
 
   - name: medium
     url-pattern: medium.com/@__USERNAME__
-    icon-class: fab fa-medium
+    icon-class: fab fa-2x fa-medium
 
   - name: tumblr
     url-pattern: __USERNAME__.tumblr.com
@@ -163,4 +163,4 @@ social-links:
 
   - name: wheretofindme
     url-pattern: 'https://wheretofind.me/@__USERNAME__'
-    icon-class: fas fa-globe
+    icon-class: fas fa-2x fa-globe
