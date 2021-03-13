@@ -2,8 +2,8 @@
 remote_theme: 'epidrome/cover-card'
 
 # Title and tag line
-title: 'My name'
-description: 'I am amazing.'
+title: 'Zeruhur'
+description: 'A man with passion for useless things'
 
 # Images
 avatar: 'avatar.jpg'
@@ -12,30 +12,30 @@ favicon: 'favicon.ico'
 
 # Online profiles
 #dribbble: 'mydribbble'
-facebook: 'myfacebook'
-twitter: 'mytwitter'
+facebook: 'Zeruhur'
+twitter: 'zeruhur'
 #linkedin: 'mylinkedin'
-instagram: 'myinsta'
+instagram: 'zeruhur'
 #pinterest: 'mypinterest'
-youtube: 'myyoutube'
-github-user: 'mygithub'
+youtube: 'zeruhur'
+github-user: 'zeruhur'
 #gitlab-user: ''
 #codepen: ''
 #steam: ''
 #soundcloud: ''
-#lastfm: ''
+lastfm: 'ZeruhurII'
 #stack-overflow: ''
 #reddit: ''
 #rubygems: ''
-#medium:  ''
-tumblr: 'mytumblr'
-weibo: 'myweibo'
-vk: 'myvk'
-blog_url: 'myblog.blog.com'
-email: 'hello@example.com'
-messenger: 'myfbchat'
+medium:  'zeruhur'
+tumblr: 'zeruhur'
+#weibo: 'myweibo'
+#vk: 'myvk'
+blog_url: 'https://zeruhur.space/blog/'
+#email: 'hello@example.com'
+messenger: 'zeruhur'
 
-social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
+social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, blog_url, email]
 
 # Advanced settings
 plugins:
