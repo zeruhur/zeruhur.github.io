@@ -34,8 +34,9 @@ tumblr: 'zeruhur'
 blog_url: 'https://zeruhur.space/blog/'
 #email: 'hello@example.com'
 messenger: 'zeruhur'
+wheretofindme: 'zeruhur'
 
-social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, blog_url, email]
+social-links-order: [wheretofindme, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, blog_url, email]
 
 # Advanced settings
 plugins:
@@ -127,6 +128,7 @@ social-links:
 
   - name: medium
     url-pattern: medium.com/@__USERNAME__
+    icon-class: fab fa-medium
 
   - name: tumblr
     url-pattern: __USERNAME__.tumblr.com
@@ -158,3 +160,7 @@ social-links:
     url-scheme: 'mailto:'
     url-pattern: '__USERNAME__'
     icon-class: far fa-2x fa-envelope-open
+
+  - name: wheretofindme
+    url-pattern: 'https://wheretofind.me/@__USERNAME__'
+    icon-class: fas fa-globe
