@@ -1,110 +1,160 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Theme
+remote_theme: 'epidrome/cover-card'
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-remote_theme: "mmistakes/so-simple-theme@3.2.0"
-# remote_theme: mmistakes/so-simple-theme
-skin: "/assets/css/skins/default.css"
-locale: en-US
-title: "holism in the attic"
-description: "Wisdom is one thing. It is to know the thought by which all things are steered through all things."
-baseurl: # the subpath of your site, e.g. "/blog"
-url: "https://zeruhur.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
-date_format: "%B %-d, %Y"
-read_time: true # reading time estimates, e.g. true
-words_per_minute: 200 # 200
-mathjax:
-  enable: true # MathJax equations, e.g. true, false (default)
-  combo: tex-svg # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
-  tags: ams # "none", "ams" (default), "all"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-google_analytics: UA-169277426-1 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-disqus:
-  shortname: "zeruhur" # Disqus shortname, e.g. "my_disqus_shortname"
-twitter:
-  username: "zeruhur" # site's Twitter username, e.g. "mmistakes"
+# Title and tag line
+title: 'Zeruhur'
+description: 'A man with passion for useless things'
 
-# Liquid
-liquid:
-  error_mode: strict
+# Images
+avatar: 'avatar.jpg'
+background: 'background.jpg'
+favicon: 'favicon.ico'
 
-# Build settings
-permalink: /:categories/:title/
-markdown: kramdown
-feed:
-  path: atom.xml
+# Online profiles
+#dribbble: 'mydribbble'
+facebook: 'Zeruhur'
+twitter: 'zeruhur'
+#linkedin: 'mylinkedin'
+instagram: 'zeruhur'
+#pinterest: 'mypinterest'
+youtube: 'zeruhur'
+github-user: 'zeruhur'
+#gitlab-user: ''
+#codepen: ''
+#steam: ''
+#soundcloud: ''
+lastfm: 'ZeruhurII'
+#stack-overflow: ''
+#reddit: ''
+#rubygems: ''
+medium:  'zeruhur'
+tumblr: 'zeruhur'
+#weibo: 'myweibo'
+#vk: 'myvk'
+blog_url: 'https://zeruhur.space/blog/'
+#email: 'hello@example.com'
+messenger: 'zeruhur'
 
-# Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, blog_url, email]
 
-# Search
-search_full_content: true # can have performance implications for large sites
-
-# Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
+# Advanced settings
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
+  - jekyll-remote-theme
 
-# Front Matter Defaults
-defaults:
-  # Posts defaults
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      share: true
+# Yaml manifest of supported social links
+# Requirements:
+# `name`
+#     - plain-text name of the site (e.g. twitter)
+#     - **mandatory**
+# `url-pattern`
+#     - site URL pattern containing a placeholder string (e.g. twitter.com/__USERNAME__)
+#     - placeholder will be replaced by username or value specified in _config.yml (e.g. twitter.com/mytwitter)
+#     - **mandatory**
+# `url-scheme`
+#     - the hardcoded URI/URN url-scheme (e.g. https://)
+#     - can be one of: ['https://', 'http://', 'mailto:']
+#     - defaults to '//'
+#     - **optional**
+# `icon-class`
+#     - the font awesome icon class names
+#     - font-awesome free and supports `fas` (solid) and `fab` (brands) styles
+#     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
+#     - **optional**
+social-links:
+  - name: facebook
+    url-pattern: facebook.com/__USERNAME__
+    icon-class: fab fa-2x fa-facebook-f
 
-# Site Author
-author:
-  name: zeruhur
-  picture:
-  email: zeruhur@mail.com
-  twitter: zeruhur
-  links:
-    - title: home page
-      url: https://zeruhur.space
-      icon: fas fa-home
-    - title: instagram
-      url: https://www.instagram.com/zeruhur/
-      icon: fab fa-instagram
-      
-# Footer Links
-footer_links:
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+  - name: twitter
+    url-pattern: twitter.com/__USERNAME__
+
+  - name: linkedin
+    url-pattern: linkedin.com/in/__USERNAME__
+
+  - name: google-plus
+    url-pattern: plus.google.com/+__USERNAME__
+
+  - name: vk
+    url-pattern: vk.com/__USERNAME__
+
+  - name: weibo
+    url-pattern: weibo.com/__USERNAME__
+
+  - name: instagram
+    url-pattern: instagram.com/__USERNAME__
+
+  - name: flickr
+    url-pattern: flickr.com/__USERNAME__
+
+  - name: pinterest
+    url-pattern: pinterest.com/__USERNAME__
+
+  - name: github-user
+    url-pattern: github.com/__USERNAME__
+    icon-class: fab fa-2x fa-github
+
+  - name: gitlab-user
+    url-pattern: gitlab.com/__USERNAME__
+    icon-class: fab fa-2x fa-gitlab
+
+  - name: codepen
+    url-pattern: codepen.com/__USERNAME__
+
+  - name: stack-overflow
+    url-pattern: stackoverflow.com/users/__USERNAME__
+
+  - name: reddit
+    url-pattern: reddit.com/user/__USERNAME__
+
+  - name: rubygems
+    url-pattern: rubygems.org/profiles/__USERNAME__
+    icon-class: far fa-2x fa-gem
+
+  - name: steam
+    url-pattern: steamcommunity.com/id/__USERNAME__
+
+  - name: youtube
+    url-pattern: youtube.com/__USERNAME__
+
+  - name: vimeo
+    url-pattern: vimeo.com/__USERNAME__
+
+  - name: soundcloud
+    url-pattern: soundcloud.com/__USERNAME__
+
+  - name: lastfm
+    url-pattern: last.fm/user/__USERNAME__
+
+  - name: medium
+    url-pattern: medium.com/@__USERNAME__
+
+  - name: tumblr
+    url-pattern: __USERNAME__.tumblr.com
+
+  - name: dribbble
+    url-pattern: dribbble.com/__USERNAME__
+
+  - name: keybase
+    url-pattern: keybase.io/__USERNAME__
+
+  - name: messenger
+    url-pattern: m.me/__USERNAME__
+    icon-class: fab fa-2x fa-facebook-messenger
+
+  - name: telegram
+    url-pattern: telegram.me/__USERNAME__
+
+  - name: snapchat
+    url-pattern: snapchat.com/add/__USERNAME__
+
+  - name: quora
+    url-pattern: www.quora.com/profile/__USERNAME__
+
+  - name: blog_url
+    url-pattern: '__USERNAME__'
+    icon-class: fas fa-2x fa-blog
+
+  - name: email
+    url-scheme: 'mailto:'
+    url-pattern: '__USERNAME__'
+    icon-class: far fa-2x fa-envelope-open
