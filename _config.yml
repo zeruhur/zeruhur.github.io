@@ -37,8 +37,9 @@ messenger: 'zeruhur'
 wheretofindme: 'zeruhur'
 telegram: 'zeruhur'
 itch.io: 'zeruhur'
+games: zeruhur.space/games/
 
-social-links-order: [wheretofindme, itch.io, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url, email]
+social-links-order: [wheretofindme, itch.io, games, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url, email]
 
 # Advanced settings
 plugins:
@@ -172,3 +173,6 @@ social-links:
     url-pattern: __USERNAME__.itch.io
     icon-class: fab fa-2x fa-itch-io
     
+  - name: games
+    url-pattern: __USERNAME__
+    icon-class: fas fa-2x fa-dice-d20
