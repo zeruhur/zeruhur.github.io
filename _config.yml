@@ -31,15 +31,16 @@ medium:  'zeruhur'
 #tumblr: 'zeruhur'
 #weibo: 'myweibo'
 #vk: 'myvk'
-blog_url: 'zeruhur.space/blog/'
+blog_url1: 'zeruhur.space/zotiquest/'
+blog_url2: 'zeruhur.space/syrinx/'
 #email: 'hello@example.com'
 messenger: 'zeruhur'
-wheretofindme: 'zeruhur'
+linktree: 'zeruhur'
 telegram: 'zeruhur'
 itch.io: 'zeruhur'
 games: zeruhur.space/games/
 
-social-links-order: [wheretofindme, itch.io, games, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url, email]
+social-links-order: [linktree, itch.io, games, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url1, blog_url2, email]
 
 # Advanced settings
 plugins:
@@ -165,8 +166,8 @@ social-links:
     url-pattern: '__USERNAME__'
     icon-class: far fa-2x fa-envelope-open
 
-  - name: wheretofindme
-    url-pattern: wheretofind.me/@__USERNAME__
+  - name: linktree
+    url-pattern: https://linktr.ee/__USERNAME__
     icon-class: fas fa-2x fa-globe
 
   - name: itch.io
