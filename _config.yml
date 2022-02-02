@@ -1,5 +1,5 @@
 # Theme
-remote_theme: 'epidrome/cover-card'
+theme: 'cover-card'
 
 # Title and tag line
 title: 'Zeruhur' 
