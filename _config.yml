@@ -1,5 +1,5 @@
 # Theme
-theme: 'cover-card'
+remote_theme: epidrome/cover-card@main
 
 # Title and tag line
 title: 'Zeruhur' 
@@ -33,7 +33,7 @@ medium:  'zeruhur'
 #vk: 'myvk'
 blog_url1: 'zeruhur.space/zotiquest/'
 blog_url2: 'zeruhur.space/syrinx/'
-#email: 'hello@example.com'
+email: 'zeruhur.games@gmail.com'
 messenger: 'zeruhur'
 linktree: 'zeruhur'
 telegram: 'zeruhur'
@@ -41,10 +41,6 @@ itch.io: 'zeruhur'
 games: zeruhur.space/games/
 
 social-links-order: [linktree, itch.io, games, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url1, blog_url2, email]
-
-# Advanced settings
-plugins:
-  - jekyll-remote-theme
 
 # Yaml manifest of supported social links
 # Requirements:
