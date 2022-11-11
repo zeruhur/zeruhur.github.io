@@ -163,7 +163,7 @@ social-links:
     icon-class: far fa-2x fa-envelope-open
 
   - name: linktree
-    url-pattern: https://linktr.ee/__USERNAME__
+    url-pattern: linktr.ee/__USERNAME__
     icon-class: fas fa-2x fa-globe
 
   - name: itch.io
