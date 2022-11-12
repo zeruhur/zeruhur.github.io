@@ -38,7 +38,7 @@ messenger: 'zeruhur'
 linktree: 'zeruhur'
 telegram: 'zeruhur'
 itch.io: 'zeruhur'
-games: zeruhur.space/games/
+games: games.zeruhur.space
 
 social-links-order: [linktree, itch.io, games, github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, medium, lastfm, dribbble, messenger, telegram, blog_url1, blog_url2, email]
 
