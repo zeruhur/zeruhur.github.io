@@ -1,6 +1,7 @@
 baseURL = 'https://zeruhur.github.io/'
 languageCode = 'en-us'
 title = 'Zeruhur'
+publishDir = "docs"
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
@@ -60,5 +61,3 @@ disableKinds = ["taxonomy", "term"]
 [markup.goldmark]
 [markup.goldmark.renderer]
   unsafe = true
-
-publishDir = "docs"
