@@ -1,5 +1,5 @@
 baseURL = 'https://zeruhur.github.io/'
-languageCode = 'en-us'
+languageCode = 'it-it'
 title = 'Zeruhur'
 publishDir = "docs"
 
@@ -8,51 +8,52 @@ disableKinds = ["taxonomy", "term"]
 
 [author]
   name = "Zeruhur"
-  headline = "Geek, Podcaster & Amateur TTRPG Designer"
-  image = "img/author.jpg"  # path relative to static directory
+  headline = "Geek, Podcaster & Designer Amatoriale di GDR"
+  image = "img/author.png"  # path relative to static directory
 
   links = [
-    { email = "mailto:zeruhur.games@gmail.com" },
+    { blog = { href = "https://blog.zeruhur.icu", text = "holism in the attic (blog)"}}, 
+    { mastodon = { href = "https://livellosegreto.it/@zeruhur", text = "Livello Segreto (mastodon)"} },
+    { mastodon = { href = "https://dice.camp/@zeruhur", text = "Dice Camp (mastodon)"} },
+    { telegram = { href = "https://t.me/zeruhur", text = "Contatto Telegram"}},
+    { telegram = { href = "https://t.me/holismintheattic", text = "holism in the attic (Telegram)"}}, 
     { itch-io = { href = "https://zeruhur.itch.io/", text = "itch.io" } },
-    # { link = "https://link-to-some-website.com/" },
-    # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
-    # { apple = "https://www.apple.com" },
-    # { codepen = "https://codepen.io/username" },
-    # { dev = "https://dev.to/username" },
-    # { discord = "https://discord.gg/invitecode" },
-    # { dribbble = "https://dribbble.com/username" },
-    { facebook = "https://facebook.com/Zeruhur" },
-    # { itch.io = { href = "https://zeruhur.itch.io/", text = "itch.io"}  },
-    # { flickr = "https://www.flickr.com/photos/username/" },
-    # { foursquare = "https://foursquare.com/username" },
-    # { github = "https://github.com/zeruhur" },
-    # { gitlab = "https://gitlab.com/username" },
-    # { google = "https://www.google.com/" },
-    { instagram = "https://instagram.com/zeruhur" },
-    # { keybase = "https://keybase.io/username" },
-    # { kickstarter = "https://www.kickstarter.com/profile/username" },
-    # { lastfm = "https://lastfm.com/user/username" },
-    # { linkedin = "https://linkedin.com/in/username" },
-    { mastodon = "https://mastodon.instance/@zeruhur@dice.camp" },
     { medium = "https://medium.com/zeruhur" },
-    # { microsoft = "https://www.microsoft.com/" },
-    # { patreon = "https://www.patreon.com/username" },
-    # { pinterest = "https://pinterest.com/username" },
     { reddit = "https://reddit.com/user/zeruhur_" },
-    # { slack = "https://workspace.url/team/userid" },
-    # { snapchat = "https://snapchat.com/add/username" },
-    # { soundcloud = "https://soundcloud.com/username" },
-    # { steam = "https://steamcommunity.com/profiles/userid" },
-    { telegram = "https://t.me/zeruhur" },
+    { youtube = { href = "https://youtube.com/@avventurierosolitario", text = "Actual Play GDRS"}},
+    { goodreads-g = { href = "https://www.goodreads.com/user/show/4952964-zeruhur", text = "Goodreads" }},
+    { amazon = { href = "https://www.amazon.it/stores/Roberto-Bisceglie/author/B0C4JP9JCK", text = "Pagina Autore Amazon"  }},
+
+    # { email = "mailto:zeruhur.games@gmail.com" },
+    # { instagram = "https://instagram.com/zeruhur" },    
     # { tiktok = "https://tiktok.com/@username" },
     # { tumblr = "https://username.tumblr.com" },
     # { twitch = "https://twitch.tv/username" },
     # { twitter = "https://twitter.com/zeruhur" },
     # { whatsapp = "https://wa.me/phone-number" },
-    # { youtube = "https://youtube.com/username" },
-    #{ link = "https://zeruhur.itch.io/"},
-    #{ link = "https://www.goodreads.com/user/show/4952964-zeruhur"},
-    { goodreads-g = { href = "https://www.goodreads.com/user/show/4952964-zeruhur", text = "Goodreads" } },
+    # { slack = "https://workspace.url/team/userid" },
+    # { snapchat = "https://snapchat.com/add/username" },
+    # { soundcloud = "https://soundcloud.com/username" },
+    # { steam = "https://steamcommunity.com/profiles/userid" },
+    # { microsoft = "https://www.microsoft.com/" },
+    # { patreon = "https://www.patreon.com/username" },
+    # { pinterest = "https://pinterest.com/username" }, 
+    # { keybase = "https://keybase.io/username" },
+    # { kickstarter = "https://www.kickstarter.com/profile/username" },
+    # { lastfm = "https://lastfm.com/user/username" },
+    # { linkedin = "https://linkedin.com/in/username" },
+    # { link = "https://link-to-some-website.com/" },
+    # { apple = "https://www.apple.com" },
+    # { codepen = "https://codepen.io/username" },
+    # { dev = "https://dev.to/username" },
+    # { discord = "https://discord.gg/invitecode" },
+    # { dribbble = "https://dribbble.com/username" },
+    # { facebook = "https://facebook.com/Zeruhur" },
+    # { flickr = "https://www.flickr.com/photos/username/" },
+    # { foursquare = "https://foursquare.com/username" },
+    # { github = "https://github.com/zeruhur" },
+    # { gitlab = "https://gitlab.com/username" },
+    # { google = "https://www.google.com/" }
   ]
 
 [markup.highlight]
