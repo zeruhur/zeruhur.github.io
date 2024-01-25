@@ -18,12 +18,15 @@ disableKinds = ["taxonomy", "term"]
     { telegram = { href = "https://t.me/zeruhur", text = "Contatto Telegram"}},
     { telegram = { href = "https://t.me/holismintheattic", text = "holism in the attic (Telegram)"}}, 
     { itch-io = { href = "https://zeruhur.itch.io/", text = "itch.io" } },
+    { podcast = {href = "https://podcasters.spotify.com/pod/show/wunderkammer", text = "Wunderkammer"}},
+    { podcast = {href = "https://podcasters.spotify.com/pod/show/lorelounge", text = "Lore Lounge"}},
     { medium = "https://medium.com/zeruhur" },
     { reddit = "https://reddit.com/user/zeruhur_" },
     { youtube = { href = "https://youtube.com/@avventurierosolitario", text = "Actual Play GDRS"}},
     { goodreads-g = { href = "https://www.goodreads.com/user/show/4952964-zeruhur", text = "Goodreads" }},
     { amazon = { href = "https://www.amazon.it/stores/Roberto-Bisceglie/author/B0C4JP9JCK", text = "Pagina Autore Amazon"  }},
-
+    
+    #{ link = href = {"", text = ""}},
     # { email = "mailto:zeruhur.games@gmail.com" },
     # { instagram = "https://instagram.com/zeruhur" },    
     # { tiktok = "https://tiktok.com/@username" },
