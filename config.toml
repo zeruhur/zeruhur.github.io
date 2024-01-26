@@ -12,6 +12,7 @@ disableKinds = ["taxonomy", "term"]
   image = "img/author.png"  # path relative to static directory
 
   links = [
+    { link = { href = "https://portfolio.zeruhur.icu", text = "portfolio"}},
     { blog = { href = "https://blog.zeruhur.icu", text = "holism in the attic (blog)"}}, 
     { mastodon = { href = "https://livellosegreto.it/@zeruhur", text = "Livello Segreto (mastodon)"} },
     { mastodon = { href = "https://dice.camp/@zeruhur", text = "Dice Camp (mastodon)"} },
@@ -26,7 +27,7 @@ disableKinds = ["taxonomy", "term"]
     { goodreads-g = { href = "https://www.goodreads.com/user/show/4952964-zeruhur", text = "Goodreads" }},
     { amazon = { href = "https://www.amazon.it/stores/Roberto-Bisceglie/author/B0C4JP9JCK", text = "Pagina Autore Amazon"  }},
     
-    #{ link = href = {"", text = ""}},
+    # { link = { href = "", text = ""}},
     # { email = "mailto:zeruhur.games@gmail.com" },
     # { instagram = "https://instagram.com/zeruhur" },    
     # { tiktok = "https://tiktok.com/@username" },
