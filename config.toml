@@ -13,6 +13,7 @@ disableKinds = ["taxonomy", "term"]
 
   links = [
     { link = { href = "https://portfolio.zeruhur.icu", text = "portfolio"}},
+    { link = { href = "https://www.zotiquestgames.com/", text = "Zotiquest Games"}},
     { blog = { href = "https://blog.zeruhur.icu", text = "holism in the attic (blog)"}}, 
     { mastodon = { href = "https://livellosegreto.it/@zeruhur", text = "Livello Segreto (mastodon)"} },
     { telegram = { href = "https://t.me/zeruhur", text = "Contatto Telegram"}},
