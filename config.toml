@@ -15,7 +15,7 @@ disableKinds = ["taxonomy", "term"]
     { link = { href = "https://portfolio.zeruhur.icu", text = "portfolio"}},
     { link = { href = "https://www.zotiquestgames.com/", text = "Zotiquest Games"}},
     { blog = { href = "https://blog.zeruhur.icu", text = "holism in the attic (blog)"}}, 
-    { mastodon = { href = "https://livellosegreto.it/@zeruhur", text = "Livello Segreto (mastodon)"} },
+    { mastodon = { href = "https://gotosocial.zeruhur.icu/@zeruhur", text = "GoToSocial"} },
     { telegram = { href = "https://t.me/zeruhur", text = "Contatto Telegram"}},
     { itch-io = { href = "https://zeruhur.itch.io/", text = "itch.io" } },
     { podcast = {href = "https://podcasters.spotify.com/pod/show/wunderkammer", text = "Wunderkammer"}},
